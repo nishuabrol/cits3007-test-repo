@@ -12,8 +12,8 @@ int is_leap(long year) {
     return 0;
   }
 
-  if (year % 100 == 0 && year % 400 != 0) {
-    return 0;
+  if (year % 100 == 0) {
+    return year % 400 == 0;
   }
 
   return 1;
